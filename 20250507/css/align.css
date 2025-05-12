@@ -1,0 +1,43 @@
+main{
+    background: bisque
+}
+
+section, article{
+    border: solid white;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+section{
+    background: pink;
+    display: flex;
+    height: 300px;
+}
+
+article{
+    background: lightsalmon;
+    width: 100px;
+    /* height: 100px; */
+    text-align: center;
+}
+
+.peque{height: 80px;}
+.grande{height: 200px;}
+.mediano{height: 150px;}
+.grandote{height: 250px;}
+
+#start{align-items: flex-start;}
+#end{align-items: flex-end;}
+#center{align-items: center;}
+#stretch{align-items: stretch;}
+#baseline{align-items: baseline;}
+
+#p{font-size: 1rem ;}
+#g{font-size: 2rem;}
+#m{font-size: 3rem;}
+#g{font-size: 4rem;}
+
+#baseline article{
+    align-content: center;
+    width: 270px;
+}
