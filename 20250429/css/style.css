@@ -1,0 +1,45 @@
+body{
+    border: red dashed 5px;
+    padding: 1rem;
+    background-color: lavenderblush;
+}
+
+header{
+    border: solid rgb(0, 162, 255) 2px;
+    padding: 1rem;
+}
+
+nav{
+    border: 1px burlywood solid;
+    border-radius: 1rem;
+    margin: 2rem;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    background: lightpink;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+main{ 
+    border: dotted 5px greenyellow;
+    padding: 1rem;
+    margin: 2rem;
+    
+}
+
+footer{
+    background: black;
+    color: white;
+    border: 1px orange solid;
+}
+
+p{ text-align: justify;}
