@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background: violet;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+section,article{
+    margin: 1rem;
+    display: flex;
+    border: solid 3px;
+    border-radius: 1rem;
+}
+
+section{
+    background: purple;
+    width: 550px;
+    flex-wrap: wrap;
+}
+
+article{
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+    padding: 1rem;
+}
+#row{flex-direction: row;}
+#row_rever{flex-direction: row-reverse;}
+#column{flex-direction: column; height: 450px;}
+#colu_rever{flex-direction: column-reverse; height: 450px;}
