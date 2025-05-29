@@ -10,6 +10,14 @@ main{
     padding: 1rem;
 }
 
+header{
+    text-align: center;
+    color: lightpink;
+}      
+aside{
+    padding: 2rem;
+}
+
 section{
     display: grid;
     background: beige;
@@ -40,3 +48,10 @@ article{
 #e{ grid-area: -5 / 3 / -3 / 5 ;}
 #f{ grid-column: 3 / 5; }
 
+footer{
+    background:black ;
+    color: white;
+    height: 80px;
+    padding: 1rem;
+    text-align: center;
+}

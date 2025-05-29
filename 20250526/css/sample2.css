@@ -1,0 +1,14 @@
+header, main, footer, aside, nav{
+    border: solid 3px; border-radius: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        display: grid;
+        grid-template-columns: 4fr 1fr;
+    }
+    header, footer, nav{ grid-column: 1 / -1;}
+    header nav{ visibility: hidden;}
+    nav{ visibility: unset;}
+    
+}

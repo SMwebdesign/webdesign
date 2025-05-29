@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-family: Verdana;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    grid-column: 1 / -1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    background-color: #884f04ad; 
+}
+
+header h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+nav{
+    grid-column: 1 / -1;
+    background-color: rgba(245, 208, 152, 0.87);
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 170px) 1fr;
+    list-style: none;
+}
+nav a{
+    border: black solid;
+    padding: .6rem 1rem;
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+nav a:hover {
+    background: rgba(255, 203, 72, 0.726);
+    color: white;
+}
+
+main {
+    grid-column: 1 / 5;
+    padding: 2rem;
+}
+
+aside {
+    grid-column: 5 / 7;
+    padding: 2rem;
+    background-color: #fff8dc;
+    border: 3px solid #deb887;
+    justify-content: center;
+    align-items: center;
+    
+}
+aside h2{
+    font-family: Verdana;
+    text-align: center;
+}
+
+
+
+footer {
+    grid-column: 1 / -1;
+    height: 80px;
+    padding: 1rem;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+
+section {
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.primera {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+article {
+    width: 100%;
+    background-color: #fddcaae8;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+article:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+article img {
+    width: 90%;
+    justify-self: center;
+    border-radius: 0.5rem;
+}
+.L{
+    height: 250px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+}
+.L img{
+    grid-row: 1 / -1;
+    width: 150px;
+    
+}
+  

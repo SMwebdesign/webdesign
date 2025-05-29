@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+body{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+header {
+    grid-column: 1 / -1;
+    position: relative;
+    height: 195px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+header .fondo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header h1 {
+    color: white;
+    font-family: Verdana;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+nav {
+    z-index: 1;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem;
+    border-radius: 3px solid;
+}
+
+nav a {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 5px solid;
+}
+
+nav a:hover {
+    background: rgba(106, 231, 240, 0.288);
+    color: white;
+    border-radius: 5px solid;
+}
+
+main{
+    grid-column: 1 / 5;
+    padding: 1rem;
+}
+aside{
+    grid-column: -3 / -1;
+    padding: 2rem;
+}
+footer{
+    grid-column: 1 / -1;
+    height: 80px;
+    padding: 2rem;
+    border: solid white;   
+    color: gray;
+    text-align: center;
+    background: black;
+}
+section{
+    gap: 2rem;
+}
+article p{
+    font-size: 1.2rem;
+}
+article h2{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.L{
+    height: 200px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+}
+.L{
+    grid-row: 1 / -1;
+    width: 150px;
+    
+}
+.ART {
+    min-height: 600px;
+    width: 600px;
+    display: grid;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.ART :hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.ART img{
+    width: 220px;
+    height: 200px;
+    border-radius: 3px solid;
+}
+#A{
+    width: 260px;
+    display: grid;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#A:hover {
+    transform: translateY(-10px);
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+#A img{
+    width: 220px;
+    height: 200px;
+    border-radius: 3px solid;
+}

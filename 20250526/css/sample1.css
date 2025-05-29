@@ -1,0 +1,26 @@
+main{
+    background: lightpink;
+    width: 1000px;
+    border: gray 3px solid;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 2rem;
+}
+@media screen and (max-width: 800px){
+    main { 
+        background: lightblue; 
+        border: lime dotted;
+        font-size: 1.2rem;
+        color: aliceblue;
+    }
+    
+}
+@media screen and (max-width:450px){
+    main {
+        background: lightcoral;
+        border: dashed lightgoldenrodyellow;
+        font-size: 0.8rem;
+        color: blue;
+    }     
+    
+}
